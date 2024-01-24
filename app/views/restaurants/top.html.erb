@@ -1,0 +1,8 @@
+<h1>Here are our 5 ⭐️ restaurants</h1>
+<% @restaurants.each do |restaurant|  %>
+  <p><%= restaurant.name  %></p>
+  <p><%= restaurant.address %></p>
+  <p><%= restaurant.phone_number %></p>
+  <p><%= restaurant.category %></p>
+  <%= link_to "Show this restaurant", restaurant_path(restaurant) %>
+<% end %>
